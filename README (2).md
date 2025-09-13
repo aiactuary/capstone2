@@ -25,7 +25,7 @@ Can we use ML to predict lapse risk, segment policyholders into **risk deciles**
 
 ## Results
 - **Best Model:** Logistic Regression provided the best balance of interpretability and predictive performance.  
-- **Performance (test set):** ROC-AUC ≈ 0.82, PR-AUC ≈ 0.75, Accuracy ≈ 0.80, F1 ≈ 0.55 (values will vary slightly).  
+- **Performance (test set):** ROC-AUC ≈ 0.835, PR-AUC ≈ 0.617, Accuracy ≈ 0.80, F1 ≈ 0.603.  
 - **Risk Deciles:** Customers segmented into 10 groups (D1–D10).  
   - D1 = safest (lapse rate < 1%).  
   - D10 = riskiest (lapse rate > 40%).  

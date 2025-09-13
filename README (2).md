@@ -28,7 +28,7 @@ Can we use ML to predict lapse risk, segment policyholders into **risk deciles**
 - **Performance (test set):** ROC-AUC ≈ 0.835, PR-AUC ≈ 0.617, Accuracy ≈ 0.80, F1 ≈ 0.603.  
 - **Risk Deciles:** Customers segmented into 10 groups (D1–D10).  
   - D1 = safest (lapse rate < 1%).  
-  - D10 = riskiest (lapse rate > 40%).  
+  - D10 = riskiest (lapse rate > 69%).  
 - **Business Impact:** Top deciles (D9–D10) are clear targets for retention campaigns, while lower deciles can be deprioritized.  
 
 ---

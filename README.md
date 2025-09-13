@@ -53,7 +53,3 @@ Although the Telco Customer Churn dataset already appears in the syllabus for ba
 3. Conduct **cost–benefit analysis** of retention offers (intervention cost vs. lifetime value saved).  
 4. Deploy as a batch-scoring workflow with scheduled decile risk reports.  
 
----
-
-## Link to Jupyter Notebook
-➡️ [Capstone Final Notebook](notebooks/capstone_lapse_final.ipynb)

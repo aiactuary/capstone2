@@ -11,7 +11,7 @@ Although the Telco Customer Churn dataset already appears in the syllabus for ba
 
 ## Files
 
-- [Jupyter Notebook — `capstone_lapse_eda.ipynb`](capstone_lapse_eda.ipynb)
+- [Jupyter Notebook — `capstone_lapse_eda.ipynb`](capstone_lapse_final_ok.ipynb)
 - [Dataset - 'WA_Fn-UseC_-Telco-Customer-Churn.csv'](WA_Fn-UseC_-Telco-Customer-Churn.csv)
 
 ---

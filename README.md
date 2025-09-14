@@ -31,12 +31,25 @@ Although the Telco Customer Churn dataset already appears in the syllabus for ba
 ---
 
 ## Results
-- **Best Model:** Logistic Regression provided the best balance of interpretability and predictive performance.  
-- **Performance (test set):** ROC-AUC ≈ 0.835, PR-AUC ≈ 0.617, Accuracy ≈ 0.80, F1 ≈ 0.603.  
-- **Risk Deciles:** Customers segmented into 10 groups (D1–D10).  
+We tested **four classification models** with 5-fold stratified cross-validation and hyperparameter tuning:
+
+- **Logistic Regression** (baseline, interpretable, well-calibrated for probabilities).  
+- **Decision Tree** (captures nonlinear patterns, easy to interpret, prone to overfitting if unrestricted).  
+- **K-Nearest Neighbors (KNN)** (instance-based, simple but can struggle with high-dimensional data).  
+- **Support Vector Classifier (SVC)** (maximizes margin, effective with complex boundaries).  
+
+### Model Comparison
+- All models were evaluated on the **ROC-AUC (primary metric)**, with **PR-AUC, Accuracy, and F1** also reported for context.  
+- **Best Model:** Logistic Regression provided the strongest balance of performance and interpretability.  
+- **Performance (test set):** ROC-AUC ≈ 0.835, PR-AUC ≈ 0.617, Accuracy ≈ 0.80, F1 ≈ 0.603. 
+
+### Risk Deciles
+- Customers were segmented into 10 groups (D1–D10).  
   - D1 = safest (lapse rate < 1%).  
   - D10 = riskiest (lapse rate > 69%).  
-- **Business Impact:** Top deciles (D9–D10) are clear targets for retention campaigns, while lower deciles can be deprioritized.  
+
+### Business Impact
+- Upper deciles (D9–D10) are prime targets for **retention campaigns**, while lower deciles (D1–D3) can be maintained with standard communication.
 
 ---
 
@@ -49,7 +62,6 @@ Although the Telco Customer Churn dataset already appears in the syllabus for ba
 
 ## Next Steps
 1. Apply this framework to **actual insurance lapse data**.  
-2. Explore **ensemble models** (XGBoost, Random Forests) with explainability tools (e.g., SHAP).  
-3. Conduct **cost–benefit analysis** of retention offers (intervention cost vs. lifetime value saved).  
-4. Deploy as a batch-scoring workflow with scheduled decile risk reports.  
+2. Conduct **cost–benefit analysis** of retention offers (intervention cost vs. lifetime value saved).  
+3. Deploy as a batch-scoring workflow with scheduled decile risk reports.  
 
